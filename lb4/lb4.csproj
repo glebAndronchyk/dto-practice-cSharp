@@ -10,12 +10,9 @@
     <ItemGroup>
       <ProjectReference Include="..\CustomerLibrary\CustomerLibrary.csproj" />
       <ProjectReference Include="..\PublicationsLibrary\PublicationsLibrary.csproj" />
+      <ProjectReference Include="..\ResearchLibrary\ResearchLibrary.csproj" />
       <ProjectReference Include="..\ScientificAchievementsLibrary\ScientificAchievementsLibrary.csproj" />
       <ProjectReference Include="..\StudentsLibrary\StudentsLibrary.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="entities\Post\" />
     </ItemGroup>
 
 </Project>

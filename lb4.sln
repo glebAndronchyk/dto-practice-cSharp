@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScientificAchievementsLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicationsLibrary", "PublicationsLibrary\PublicationsLibrary.csproj", "{349F944B-D9AC-4120-906F-6F081763E794}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResearchLibrary", "ResearchLibrary\ResearchLibrary.csproj", "{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{349F944B-D9AC-4120-906F-6F081763E794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349F944B-D9AC-4120-906F-6F081763E794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349F944B-D9AC-4120-906F-6F081763E794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

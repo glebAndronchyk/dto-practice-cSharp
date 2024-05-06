@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "CustomerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CustomerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerLibrary.dll": {}
+        }
+      },
+      "PublicationsLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ScientificAchievementsLibrary": "1.0.0",
+          "StudentsLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PublicationsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PublicationsLibrary.dll": {}
+        }
+      },
+      "ScientificAchievementsLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ScientificAchievementsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScientificAchievementsLibrary.dll": {}
+        }
+      },
+      "StudentsLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StudentsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentsLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CustomerLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CustomerLibrary/CustomerLibrary.csproj",
+      "msbuildProject": "../CustomerLibrary/CustomerLibrary.csproj"
+    },
+    "PublicationsLibrary/1.0.0": {
+      "type": "project",
+      "path": "../PublicationsLibrary/PublicationsLibrary.csproj",
+      "msbuildProject": "../PublicationsLibrary/PublicationsLibrary.csproj"
+    },
+    "ScientificAchievementsLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ScientificAchievementsLibrary/ScientificAchievementsLibrary.csproj",
+      "msbuildProject": "../ScientificAchievementsLibrary/ScientificAchievementsLibrary.csproj"
+    },
+    "StudentsLibrary/1.0.0": {
+      "type": "project",
+      "path": "../StudentsLibrary/StudentsLibrary.csproj",
+      "msbuildProject": "../StudentsLibrary/StudentsLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "CustomerLibrary >= 1.0.0",
+      "PublicationsLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cryac\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\univ\\y2\\2s\\lb4\\ResearchLibrary\\ResearchLibrary.csproj",
+      "projectName": "ResearchLibrary",
+      "projectPath": "D:\\univ\\y2\\2s\\lb4\\ResearchLibrary\\ResearchLibrary.csproj",
+      "packagesPath": "C:\\Users\\cryac\\.nuget\\packages\\",
+      "outputPath": "D:\\univ\\y2\\2s\\lb4\\ResearchLibrary\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\cryac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj": {
+              "projectPath": "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj"
+            },
+            "D:\\univ\\y2\\2s\\lb4\\PublicationsLibrary\\PublicationsLibrary.csproj": {
+              "projectPath": "D:\\univ\\y2\\2s\\lb4\\PublicationsLibrary\\PublicationsLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,6 +1,4 @@
-﻿namespace lb4.entities.Customer;
-
-public class Customer
+﻿public class Customer
 {
     public string OrganizationName { get; private set; }
     public string ResearchTopic { get; private set; }

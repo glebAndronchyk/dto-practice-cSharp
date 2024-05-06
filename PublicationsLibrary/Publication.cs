@@ -1,8 +1,6 @@
 ﻿using ScientificAchievementsLibrary;
 using StudentsLibrary;
 
-namespace lb4.entities.Post;
-
 public class Publication
 {
     public Student Student { get; private set; }
