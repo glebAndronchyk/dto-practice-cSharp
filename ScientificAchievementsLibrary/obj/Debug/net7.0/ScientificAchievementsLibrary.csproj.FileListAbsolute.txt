@@ -1,0 +1,12 @@
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\bin\Debug\net7.0\ScientificAchievementsLibrary.deps.json
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\bin\Debug\net7.0\ScientificAchievementsLibrary.dll
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\bin\Debug\net7.0\ScientificAchievementsLibrary.pdb
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.dll
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\refint\ScientificAchievementsLibrary.dll
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ScientificAchievementsLibrary.pdb
+D:\univ\y2\2s\lb4\ScientificAchievementsLibrary\obj\Debug\net7.0\ref\ScientificAchievementsLibrary.dll
