@@ -1,6 +1,6 @@
 ﻿namespace lb4.entities.Post;
 
-public class PostGUI
+public class PublicationGUI
 {
     
 }
