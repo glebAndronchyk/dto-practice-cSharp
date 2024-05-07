@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AutoMapper;
+using MappinServiceLibrary;
 
 namespace lb4
 {
@@ -20,9 +22,13 @@ namespace lb4
     /// </summary>
     public partial class MainWindow : Window
     {
+        private IMapper _dtoMapper;
+        
         public MainWindow()
         {
             InitializeComponent();
+            
+            _dtoMapper = MappingInitializer.GetMapper();
         }
     }
 }

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicationsLibrary", "Publ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResearchLibrary", "ResearchLibrary\ResearchLibrary.csproj", "{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappingServiceLibrary", "MappingServiceLibrary\MappingServiceLibrary.csproj", "{5A70C05A-29AC-45B6-9383-74266BEFB97E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA3BD253-7A49-4773-B9EC-C6F3E51C94BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

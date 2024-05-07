@@ -2,24 +2,14 @@
 
 public class Student
 {
-    private string _name;
-    private string _surname;
-    private DateTime _appliedDate;
-
-    public string FullName
-    {
-        get => $"{_name} {_surname}";
-    }
-
-    public DateTime AppliedDate
-    {
-        get => _appliedDate;
-    }
+    public string Name { get; private set; }
+    public string Surname { get; private set; }
+    public DateTime AppliedDate { get; private set; }
 
     public Student(string name, string surname, DateTime appliedDate)
     {
-        _name = name;
-        _surname = surname;
-        appliedDate = _appliedDate;
+        Name = name;
+        Surname = surname;
+        AppliedDate = appliedDate;
     }
 }
