@@ -9,6 +9,6 @@ public class StudentMapping : Profile
             .ForMember(
                 dest => dest.fullName,
                 opt => opt.MapFrom(source => $"{source.Name} {source.Surname}")
-            );
+            ).ReverseMap();
     }
 }

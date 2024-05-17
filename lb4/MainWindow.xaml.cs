@@ -22,18 +22,11 @@ namespace lb4
     /// </summary>
     public partial class MainWindow : Window
     {
-        private IMapper _dtoMapper;
-        
         public MainWindow()
         {
             InitializeComponent();
-            
-            _dtoMapper = MappingInitializer.GetMapper();
         }
 
-        public void OnOpenStudentsForm(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        public void OnOpenStudentsForm(object sender, RoutedEventArgs e) => new Student_MainWindow().ShowDialog();
     }
 }

@@ -8,6 +8,9 @@ public class Student
     public string Surname { get; private set; }
     public DateTime AppliedDate { get; private set; }
 
+    public Student()
+    { }
+
     public Student(string name, string surname, DateTime appliedDate)
     {
         Name = name;
