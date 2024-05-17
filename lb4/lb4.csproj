@@ -11,8 +11,4 @@
       <PackageReference Include="AutoMapper" Version="13.0.1" />
     </ItemGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\MappingLibrary\MappingLibrary.csproj" />
-    </ItemGroup>
-
 </Project>
