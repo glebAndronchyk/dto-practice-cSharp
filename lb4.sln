@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResearchLibrary", "Research
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappingServiceLibrary", "MappingServiceLibrary\MappingServiceLibrary.csproj", "{5A70C05A-29AC-45B6-9383-74266BEFB97E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonLibrary", "JsonLibrary\JsonLibrary.csproj", "{D52E3877-F0D2-45B9-8507-EFC84D309DB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A70C05A-29AC-45B6-9383-74266BEFB97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52E3877-F0D2-45B9-8507-EFC84D309DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52E3877-F0D2-45B9-8507-EFC84D309DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52E3877-F0D2-45B9-8507-EFC84D309DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52E3877-F0D2-45B9-8507-EFC84D309DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
