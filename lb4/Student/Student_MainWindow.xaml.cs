@@ -24,5 +24,5 @@ public partial class Student_MainWindow : Window, IListWindow
 
     public void OnRemove(object sender, RoutedEventArgs routedEventArgs) => _wc.OnRemove(sender, routedEventArgs);
     
-    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => new Student_AddForm().ShowDialog();
+    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _wc.OnAddNew(sender, routedEventArgs);
 }

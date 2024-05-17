@@ -32,7 +32,7 @@ public class WindowController<T, TDTO> : IListWindow
         throw new System.NotImplementedException();
     }
 
-    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => new Student_AddForm().ShowDialog();
+    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _addWindow.ShowDialog();
 
     public void LoadData(string path, ref ObservableCollection<T> loadTo, ref ListBox displayInto)
     {
