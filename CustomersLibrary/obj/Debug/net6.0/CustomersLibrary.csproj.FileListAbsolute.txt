@@ -1,0 +1,12 @@
+D:\univ\y2\2s\lb4\CustomersLibrary\bin\Debug\net6.0\CustomersLibrary.deps.json
+D:\univ\y2\2s\lb4\CustomersLibrary\bin\Debug\net6.0\CustomersLibrary.dll
+D:\univ\y2\2s\lb4\CustomersLibrary\bin\Debug\net6.0\CustomersLibrary.pdb
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.dll
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\refint\CustomersLibrary.dll
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\CustomersLibrary.pdb
+D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net6.0\ref\CustomersLibrary.dll

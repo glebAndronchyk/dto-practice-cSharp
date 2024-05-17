@@ -1,4 +1,6 @@
-﻿namespace StudentsLibrary;
+﻿using System;
+
+namespace StudentsLibrary;
 
 public class StudentDTO
 {

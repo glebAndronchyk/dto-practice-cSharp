@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <UniformGrid Columns="1">
+        <Button Click="OnOpenStudentsForm">Open students form</Button>
+        <Button></Button>
+        <Button></Button>
+        <Button></Button>
+    </UniformGrid>
 </Window>

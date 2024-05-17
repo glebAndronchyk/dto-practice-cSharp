@@ -1,5 +1,0 @@
-D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net7.0\CustomersLibrary.csproj.AssemblyReference.cache
-D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net7.0\CustomersLibrary.GeneratedMSBuildEditorConfig.editorconfig
-D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net7.0\CustomersLibrary.AssemblyInfoInputs.cache
-D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net7.0\CustomersLibrary.AssemblyInfo.cs
-D:\univ\y2\2s\lb4\CustomersLibrary\obj\Debug\net7.0\CustomersLibrary.csproj.CoreCompileInputs.cache

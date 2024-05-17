@@ -4,14 +4,14 @@
     "D:\\univ\\y2\\2s\\lb4\\ResearchLibrary\\ResearchLibrary.csproj": {}
   },
   "projects": {
-    "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj": {
+    "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\CustomersLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj",
-        "projectName": "CustomerLibrary",
-        "projectPath": "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj",
+        "projectUniqueName": "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\CustomersLibrary.csproj",
+        "projectName": "CustomersLibrary",
+        "projectPath": "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\CustomersLibrary.csproj",
         "packagesPath": "C:\\Users\\cryac\\.nuget\\packages\\",
-        "outputPath": "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\obj\\",
+        "outputPath": "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -82,7 +82,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -90,11 +90,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj": {
-                "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj"
+              "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj": {
+                "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj"
               },
               "D:\\univ\\y2\\2s\\lb4\\StudentsLibrary\\StudentsLibrary.csproj": {
                 "projectPath": "D:\\univ\\y2\\2s\\lb4\\StudentsLibrary\\StudentsLibrary.csproj"
@@ -109,8 +109,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -149,7 +149,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -157,11 +157,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj": {
-                "projectPath": "D:\\univ\\y2\\2s\\lb4\\CustomerLibrary\\CustomerLibrary.csproj"
+              "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\CustomersLibrary.csproj": {
+                "projectPath": "D:\\univ\\y2\\2s\\lb4\\CustomersLibrary\\CustomersLibrary.csproj"
               },
               "D:\\univ\\y2\\2s\\lb4\\PublicationsLibrary\\PublicationsLibrary.csproj": {
                 "projectPath": "D:\\univ\\y2\\2s\\lb4\\PublicationsLibrary\\PublicationsLibrary.csproj"
@@ -176,8 +176,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -198,14 +198,14 @@
         }
       }
     },
-    "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj": {
+    "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj",
-        "projectName": "ScientificAchievementsLibrary",
-        "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj",
+        "projectUniqueName": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj",
+        "projectName": "ScientificAchievementLibrary",
+        "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj",
         "packagesPath": "C:\\Users\\cryac\\.nuget\\packages\\",
-        "outputPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\obj\\",
+        "outputPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -216,7 +216,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -224,8 +224,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -236,8 +236,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -276,7 +276,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -284,8 +284,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -296,8 +296,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

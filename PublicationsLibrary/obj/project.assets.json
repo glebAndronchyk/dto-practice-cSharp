@@ -1,20 +1,20 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "ScientificAchievementsLibrary/1.0.0": {
+    "net6.0": {
+      "ScientificAchievementLibrary/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/ScientificAchievementsLibrary.dll": {}
+          "bin/placeholder/ScientificAchievementLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ScientificAchievementsLibrary.dll": {}
+          "bin/placeholder/ScientificAchievementLibrary.dll": {}
         }
       },
       "StudentsLibrary/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/StudentsLibrary.dll": {}
         },
@@ -25,10 +25,10 @@
     }
   },
   "libraries": {
-    "ScientificAchievementsLibrary/1.0.0": {
+    "ScientificAchievementLibrary/1.0.0": {
       "type": "project",
-      "path": "../ScientificAchievementsLibrary/ScientificAchievementsLibrary.csproj",
-      "msbuildProject": "../ScientificAchievementsLibrary/ScientificAchievementsLibrary.csproj"
+      "path": "../ScientificAchievementLibrary/ScientificAchievementLibrary.csproj",
+      "msbuildProject": "../ScientificAchievementLibrary/ScientificAchievementLibrary.csproj"
     },
     "StudentsLibrary/1.0.0": {
       "type": "project",
@@ -37,8 +37,8 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "ScientificAchievementsLibrary >= 1.0.0",
+    "net6.0": [
+      "ScientificAchievementLibrary >= 1.0.0",
       "StudentsLibrary >= 1.0.0"
     ]
   },
@@ -64,7 +64,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -72,11 +72,11 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj": {
-              "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementsLibrary\\ScientificAchievementsLibrary.csproj"
+            "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj": {
+              "projectPath": "D:\\univ\\y2\\2s\\lb4\\ScientificAchievementLibrary\\ScientificAchievementLibrary.csproj"
             },
             "D:\\univ\\y2\\2s\\lb4\\StudentsLibrary\\StudentsLibrary.csproj": {
               "projectPath": "D:\\univ\\y2\\2s\\lb4\\StudentsLibrary\\StudentsLibrary.csproj"
@@ -91,8 +91,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",

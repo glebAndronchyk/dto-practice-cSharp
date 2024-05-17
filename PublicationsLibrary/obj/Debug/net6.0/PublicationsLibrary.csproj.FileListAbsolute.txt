@@ -1,0 +1,17 @@
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\PublicationsLibrary.deps.json
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\PublicationsLibrary.dll
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\PublicationsLibrary.pdb
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\ScientificAchievementLibrary.dll
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\StudentsLibrary.dll
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\ScientificAchievementLibrary.pdb
+D:\univ\y2\2s\lb4\PublicationsLibrary\bin\Debug\net6.0\StudentsLibrary.pdb
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.csproj.CopyComplete
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.dll
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\refint\PublicationsLibrary.dll
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\PublicationsLibrary.pdb
+D:\univ\y2\2s\lb4\PublicationsLibrary\obj\Debug\net6.0\ref\PublicationsLibrary.dll

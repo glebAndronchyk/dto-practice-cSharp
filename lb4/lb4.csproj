@@ -8,12 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CustomerLibrary\CustomerLibrary.csproj" />
-      <ProjectReference Include="..\MappingServiceLibrary\MappingServiceLibrary.csproj" />
-      <ProjectReference Include="..\PublicationsLibrary\PublicationsLibrary.csproj" />
-      <ProjectReference Include="..\ResearchLibrary\ResearchLibrary.csproj" />
-      <ProjectReference Include="..\ScientificAchievementsLibrary\ScientificAchievementsLibrary.csproj" />
-      <ProjectReference Include="..\StudentsLibrary\StudentsLibrary.csproj" />
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MappingLibrary\MappingLibrary.csproj" />
     </ItemGroup>
 
 </Project>
