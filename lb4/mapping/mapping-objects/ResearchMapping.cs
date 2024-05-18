@@ -5,6 +5,6 @@ public class ResearchMapping : Profile
 {
     public ResearchMapping()
     {
-        CreateMap<Research, ResearchDTO>();
+        CreateMap<Research, ResearchDTO>().ReverseMap();
     }
 }

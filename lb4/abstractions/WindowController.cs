@@ -33,15 +33,4 @@ public class WindowController<T, TDTO> : IListWindow
     }
 
     public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _addWindow.ShowDialog();
-
-    public void LoadData(string path, ref ObservableCollection<T> loadTo, ref ListBox displayInto)
-    {
-        var dto = JSON.ParseFromFile<List<TDTO>>(path);
-        if (dto != null)
-        {
-            var studentsList = StateSingleton.Instance.DtoMapper.Map<List<TDTO>, List<T>>(dto);
-            loadTo = new ObservableCollection<T>(studentsList);
-            displayInto.ItemsSource = loadTo;
-        }
-    }
 }

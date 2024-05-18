@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.Windows;
 using lb4.abstractions;
 
@@ -9,10 +8,15 @@ public partial class Student_AddForm : Window
 {
     private AddFormController<Student, StudentDTO> _wc;
     
-    public Student_AddForm(ref ObservableCollection<Student> students)
+    public Student_AddForm()
     {
         InitializeComponent();
-        _wc = new AddFormController<Student, StudentDTO>(ref students);
+        _wc = new AddFormController<Student, StudentDTO>("Students");
+    }
+
+    public void OnSaveAndExit(object sender, RoutedEventArgs args)
+    {
+        OnSave(sender, args);
     }
 
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new Student(
@@ -23,6 +27,6 @@ public partial class Student_AddForm : Window
 
     public void OnExit()
     {
-        
+        Close();
     }
 }

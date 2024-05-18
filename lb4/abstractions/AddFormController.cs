@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
@@ -7,17 +6,25 @@ namespace lb4.abstractions;
 
 public class AddFormController<T, TDTO>
 {
-    private ObservableCollection<T> _list;
+    private string _stateKey;
     
-    public AddFormController(ref ObservableCollection<T> list)
+    public AddFormController(string stateKey)
     {
-        _list = list;
+        _stateKey = stateKey;
     }
 
     public void OnSave(T obj, string path)
     {
-        _list.Add(obj);
-        var dtoList = StateSingleton.Instance.DtoMapper.Map<List<T>, List<TDTO>>(_list.ToList());
-        JSON.StringifyToFile(path, dtoList);
+        var stateInstance = StateSingleton.Instance;
+        var observableField = typeof(StateSingleton).GetField(_stateKey);
+
+        if (observableField != null)
+        {
+            var observableList = observableField.GetValue(stateInstance) as ObservableCollection<T>;
+            
+            observableList.Add(obj);
+            var dtoList = StateSingleton.Instance.DtoMapper.Map<List<T>, List<TDTO>>(observableList.ToList());
+            JSON.StringifyToFile(path, dtoList);
+        }
     }
 }

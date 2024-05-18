@@ -17,4 +17,9 @@ public class Student
         Surname = surname;
         AppliedDate = appliedDate;
     }
+
+    public override string ToString()
+    {
+        return $"{Name} {Surname} - Applied On: {AppliedDate}";
+    }
 }

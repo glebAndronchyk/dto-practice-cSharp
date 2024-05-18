@@ -9,6 +9,9 @@ public class Research
     public DateTime SignedDate { get; private set; }
     public List<Publication> Publications { get; private set; } = new();
 
+    public Research()
+    { }
+
     public Research(Customer customer, DateTime signedDate)
     {
         this.Customer = customer;

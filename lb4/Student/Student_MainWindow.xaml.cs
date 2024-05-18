@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Windows;
 using lb4.abstractions;
 
@@ -8,16 +6,14 @@ namespace lb4;
 
 public partial class Student_MainWindow : Window, IListWindow
 {
-    protected ObservableCollection<Student> _students;
-
     protected WindowController<Student, StudentDTO> _wc;
 
     public Student_MainWindow()
     {
         InitializeComponent();
         WindowController<Student, StudentDTO> wc = new(
-            new Student_AddForm(ref _students), new Student_AddForm(ref _students));
-        wc.LoadData("students.json", ref _students, ref listbox);
+            new Student_AddForm(), new Student_AddForm());
+        listbox.ItemsSource = StateSingleton.Instance.Students;
         _wc = wc;
     }
 
