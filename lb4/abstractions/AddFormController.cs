@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -9,11 +10,15 @@ namespace lb4.abstractions;
 public class AddFormController<T, TDTO>
 {
     private bool _confirmClose = true;
+    private Window _windowCtx;
     private string _stateKey;
+
+    public delegate void OnSaveHandlerType(object sender, RoutedEventArgs e);
     
-    public AddFormController(string stateKey)
+    public AddFormController(string stateKey, Window ctx)
     {
         _stateKey = stateKey;
+        _windowCtx = ctx;
     }
 
     public void OnSave(T obj, string path)
@@ -31,9 +36,16 @@ public class AddFormController<T, TDTO>
         }
     }
 
-    public void SetCloseConfirmation(bool val)
+    public void OnSaveAndExit(OnSaveHandlerType OnSaveHandler, object sender, RoutedEventArgs args)
     {
-        _confirmClose = val;
+        _confirmClose = false;
+        OnSaveHandler(sender, args);
+        OnClose();
+    }
+
+    public void OnClose()
+    {
+        _windowCtx.Close();
     }
 
     public void ClosingSequence(object sender, CancelEventArgs e)

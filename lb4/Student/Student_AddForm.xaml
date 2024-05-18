@@ -19,7 +19,7 @@
                 <Label Content="Applied Date:" />
                 <DatePicker Name="appliedDate" />
                 <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
-                <Button Click="OnExit" Margin="20 0 0 0">Exit and No save</Button>
+                <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
             </UniformGrid>
         </UniformGrid>
     </Grid>
