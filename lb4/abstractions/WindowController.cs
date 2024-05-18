@@ -1,36 +1,25 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace lb4.abstractions;
 
 public class WindowController<T, TDTO> : IListWindow
 {
-    private Window _addWindow;
-    private Window _editWindow;
+    private Func<Window> _addWindowFabric;
+    private Func<Window> _editWindowFabric;
     
-    public WindowController(Window addWindow, Window editWindow)
+    public WindowController(Func<Window> addWindowFabric, Func<Window> editWindowFabric)
     {
-        _addWindow = addWindow;
-        _editWindow = editWindow;
-    }
-    
-    public void OnEdit(object sender, RoutedEventArgs routedEventArgs)
-    {
-        
+        _addWindowFabric = addWindowFabric;
+        _editWindowFabric = editWindowFabric;
     }
 
-    public void OnClose(object sender, CancelEventArgs e)
-    {
-        throw new System.NotImplementedException();
-    }
-
+    public void OnEdit(object sender, RoutedEventArgs routedEventArgs) => _editWindowFabric().ShowDialog();
+    
     public void OnRemove(object sender, RoutedEventArgs routedEventArgs)
     {
         throw new System.NotImplementedException();
     }
 
-    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _addWindow.ShowDialog();
+    public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _addWindowFabric().ShowDialog();
 }

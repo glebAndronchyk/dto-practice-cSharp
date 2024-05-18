@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
         MaxHeight="400" MaxWidth="400"
+        Closing="ClosingSequence"
         Title="Student_AddForm" Height="400" Width="400">
     <Grid>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -18,7 +19,7 @@
                 <Label Content="Applied Date:" />
                 <DatePicker Name="appliedDate" />
                 <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
-                <Button Margin="20 0 0 0">Exit and No save</Button>
+                <Button Click="OnExit" Margin="20 0 0 0">Exit and No save</Button>
             </UniformGrid>
         </UniformGrid>
     </Grid>

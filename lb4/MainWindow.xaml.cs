@@ -17,7 +17,6 @@ namespace lb4
 
         public void OnOpenStudentsForm(object sender, RoutedEventArgs e) => new Student_MainWindow().ShowDialog();
 
-
         private void LoadData()
         {
             var mapper = StateSingleton.Instance.DtoMapper;

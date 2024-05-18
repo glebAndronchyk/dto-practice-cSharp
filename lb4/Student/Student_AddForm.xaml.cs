@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using lb4.abstractions;
 
@@ -16,7 +17,9 @@ public partial class Student_AddForm : Window
 
     public void OnSaveAndExit(object sender, RoutedEventArgs args)
     {
+        _wc.SetCloseConfirmation(false);
         OnSave(sender, args);
+        OnExit(sender, args);
     }
 
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new Student(
@@ -25,7 +28,9 @@ public partial class Student_AddForm : Window
         appliedDate.SelectedDate ?? DateTime.Now),
         "students.json");
 
-    public void OnExit()
+    public void ClosingSequence(object sender, CancelEventArgs e) => _wc.ClosingSequence(sender, e);
+    
+    public void OnExit(object sender, RoutedEventArgs args)
     {
         Close();
     }
