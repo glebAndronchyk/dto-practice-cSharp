@@ -5,11 +5,35 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
-        Title="Student_AddForm" Height="450" Width="800">
+        MaxHeight="400" MaxWidth="400"
+        Title="Student_AddForm" Height="400" Width="400">
     <Grid>
-        <Grid>
-            
-        </Grid>
-        
+        <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Student</Label>
+            <UniformGrid Columns="2">
+                <Label Content="First Name:" />
+                <TextBox Name="firstName"/>
+                <Label Content="Last Name:" />
+                <TextBox Name="lastName" />
+                <Label Content="Applied Date:" />
+                <DatePicker Name="appliedDate" />
+                <Button Click="OnSave" Margin="0 0 20 0">Exit and Save</Button>
+                <Button Margin="20 0 0 0">Exit and No save</Button>
+            </UniformGrid>
+        </UniformGrid>
     </Grid>
+    
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Window.Resources>
 </Window>
