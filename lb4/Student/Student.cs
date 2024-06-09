@@ -1,8 +1,9 @@
 ﻿using System;
+using lb4.abstractions;
 
 namespace lb4;
 
-public class Student
+public class Student : ItemWithId
 {
     public string Name { get; private set; }
     public string Surname { get; private set; }
@@ -11,8 +12,9 @@ public class Student
     public Student()
     { }
 
-    public Student(string name, string surname, DateTime appliedDate)
+    public Student(string name, string surname, DateTime appliedDate, string id)
     {
+        Id = id;
         Name = name;
         Surname = surname;
         AppliedDate = appliedDate;

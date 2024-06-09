@@ -7,21 +7,22 @@ namespace lb4;
 
 public partial class Student_AddForm : Window, IInteractiveWindow<Student, StudentDTO>
 {
-    private AddFormController<Student, StudentDTO> _wc;
+    private InteractiveWindowController<Student, StudentDTO> _wc;
     
     public Student_AddForm()
     {
         InitializeComponent();
-        _wc = new AddFormController<Student, StudentDTO>("Students", this);
+        _wc = new ("Students", "students.json", this);
     }
 
     public void OnSaveAndExit(object sender, RoutedEventArgs args) => _wc.OnSaveAndExit(OnSave, sender, args);
 
-    public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new Student(
+    public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new (
         firstName.Text,
         lastName.Text,
-        appliedDate.SelectedDate ?? DateTime.Now),
-        "students.json");
+        appliedDate.SelectedDate ?? DateTime.Now,
+        Guid.NewGuid().ToString()
+        ));
 
     public void ClosingSequence(object sender, CancelEventArgs e) => _wc.ClosingSequence(sender, e);
 

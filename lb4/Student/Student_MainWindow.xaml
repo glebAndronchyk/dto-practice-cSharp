@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
-        Title="Student_MainWindow" Height="450" Width="800">
+        Title="Student_MainWindow" Height="500" Width="800">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>

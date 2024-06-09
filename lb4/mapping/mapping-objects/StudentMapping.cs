@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 
 namespace lb4;
 public class StudentMapping : Profile
@@ -9,6 +10,10 @@ public class StudentMapping : Profile
             .ForMember(
                 dest => dest.fullName,
                 opt => opt.MapFrom(source => $"{source.Name} {source.Surname}")
+            )
+            .ForMember(
+                dest => dest.id,
+                opt => Guid.NewGuid()
             );
 
         CreateMap<StudentDTO, Student>()
