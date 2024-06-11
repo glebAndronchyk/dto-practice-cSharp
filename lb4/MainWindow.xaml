@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <UniformGrid Columns="1">
         <Button Click="OnOpenStudentsForm">Open students form</Button>
-        <Button></Button>
+        <Button Click="OnOpenPublicationsForm">Open publications form</Button>
         <Button></Button>
         <Button></Button>
     </UniformGrid>

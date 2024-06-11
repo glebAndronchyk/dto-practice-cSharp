@@ -39,8 +39,8 @@ public class InteractiveWindowController<T, TDTO>
 
     public void OnSaveAndExit(OnSaveHandlerType OnSaveHandler, object sender, RoutedEventArgs args)
     {
-        _confirmClose = false;
         OnSaveHandler(sender, args);
+        _confirmClose = false;
         OnClose();
     }
 

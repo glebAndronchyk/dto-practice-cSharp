@@ -16,5 +16,6 @@ namespace lb4
         }
 
         public void OnOpenStudentsForm(object sender, RoutedEventArgs e) => new Student_MainWindow().ShowDialog();
+        public void OnOpenPublicationsForm(object sender, RoutedEventArgs e) => new Publication_MainWindow().ShowDialog();
     }
 }

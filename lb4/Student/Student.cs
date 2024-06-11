@@ -8,6 +8,10 @@ public class Student : ItemWithId
     public string Name { get; private set; }
     public string Surname { get; private set; }
     public DateTime AppliedDate { get; private set; }
+    public string FullName
+    {
+        get => Name + " " + Surname;
+    }
 
     public Student()
     { }

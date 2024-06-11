@@ -16,17 +16,17 @@ public partial class Student_MainWindow : Window, IListWindowParent
                 () => new Student_AddForm(),
                 () => new Student_EditForm()
             );
-        listbox.ItemsSource = StateSingleton.Instance.Students;
+        students_list.ItemsSource = StateSingleton.Instance.Students;
         _wc = wc;
     }
 
     public void OnEdit(object sender, RoutedEventArgs routedEventArgs)
     {
-        _wc.OnEdit(sender, routedEventArgs, StateSingleton.Instance.Students[listbox.SelectedIndex].Id);
+        _wc.OnEdit(sender, routedEventArgs, StateSingleton.Instance.Students[students_list.ListBox.SelectedIndex].Id);
     }
 
     public void OnRemove(object sender, RoutedEventArgs routedEventArgs) => _wc.OnRemove(() => 
-        StateSingleton.Instance.Students.RemoveAt(listbox.SelectedIndex));
+        StateSingleton.Instance.Students.RemoveAt(students_list.ListBox.SelectedIndex));
     
     public void OnAddNew(object sender, RoutedEventArgs routedEventArgs) => _wc.OnAddNew(sender, routedEventArgs);
 }

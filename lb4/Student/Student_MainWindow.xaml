@@ -3,29 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:components="clr-namespace:lb4.Views"
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
         Title="Student_MainWindow" Height="500" Width="800">
-    <Grid>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="500" />
-                <RowDefinition Height="70" />
-            </Grid.RowDefinitions>
-            
-            <ListBox Name="listbox">
-                <ListBox.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Change Student info" Click="OnEdit"/>
-                        <MenuItem Header="Remove" Click="OnRemove"/>
-                    </ContextMenu>
-                </ListBox.ContextMenu>
-            </ListBox>
-            
-            <Button Grid.Row="1" Click="OnAddNew">
-                Add New Student
-            </Button>
-        </Grid>
-       
-    </Grid>
+    <components:ListView x:Name="students_list"
+                         AddNewText="Add New Student"
+                         OnAddNew="OnAddNew"
+                         OnRemove="OnRemove"
+                         OnEdit="OnEdit"
+                         EditText="Edit Student"
+    />
 </Window>
