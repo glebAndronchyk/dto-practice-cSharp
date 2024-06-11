@@ -5,6 +5,6 @@ public class PublicationMapping : Profile
 {
     public PublicationMapping()
     {
-        CreateMap<Publication, PublicationDTO>();
+        CreateMap<Publication, PublicationDTO>().ReverseMap();
     }
 }

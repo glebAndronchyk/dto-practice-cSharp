@@ -1,13 +1,21 @@
-﻿namespace lb4;
+﻿using lb4.abstractions;
 
-public class Publication
+namespace lb4;
+
+public class Publication : ItemWithId
 {
     public Student Student { get; private set; }
     public EScientificAchievement Achievement { get; private set; }
 
-    public Publication(Student student, EScientificAchievement achievement)
+    public Publication(Student student, EScientificAchievement achievement, string id)
     {
-        this.Student = student;
-        this.Achievement = achievement;
+        Id = id;
+        Student = student;
+        Achievement = achievement;
+    }
+
+    public override string ToString()
+    {
+        return $"{Student.FullName} - Wrote publication with achievement: {Achievement}";
     }
 }

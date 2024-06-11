@@ -1,7 +1,9 @@
-﻿namespace lb4;
+﻿using lb4.abstractions;
 
-public class PublicationDTO
+namespace lb4;
+
+public class PublicationDTO : DTOWithId
 {
-    public Student student;
-    public EScientificAchievement achievement;
+    public Student student { get; set; }
+    public EScientificAchievement achievement { get; set; }
 }
