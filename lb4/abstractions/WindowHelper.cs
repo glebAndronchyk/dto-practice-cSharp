@@ -23,4 +23,12 @@ public class WindowHelper
             callback();
         }
     }
+    
+    public static void TriggerInvalidWindow()
+    {
+        MessageBox.Show("Validation is incorrect",
+            "Error!",
+            MessageBoxButton.YesNo,
+            MessageBoxImage.Error);
+    }
 }

@@ -4,6 +4,28 @@
              xmlns:local="clr-namespace:lb4"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ControlTemplate x:Key="validationTemplate">
+                <StackPanel>
+                    <Border BorderBrush="Red" BorderThickness="1" Margin="5">
+                        <AdornedElementPlaceholder/>
+                    </Border>
+                    <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"/>
+                </StackPanel>
+            </ControlTemplate>
+
+            <Style TargetType="TextBox">
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="Width" Value="150"/>
+                <Setter Property="Height" Value="20"/>
+            </Style>
+
+            <Style TargetType="DatePicker">
+                <!-- <Setter Property="Width" Value="150"/> -->
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

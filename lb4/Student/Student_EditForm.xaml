@@ -3,37 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:viewmodel="clr-namespace:lb4.ViewModels"
         xmlns:local="clr-namespace:lb4"
         Closing="ClosingSequence"
         mc:Ignorable="d"
         Title="Student_EditForm" Height="450" Width="800">
+    <Window.DataContext>
+        <viewmodel:StudentViewModel />
+    </Window.DataContext>
     <Grid>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center">Edit Student</Label>
             <UniformGrid Columns="2">
                 <Label Content="First Name:" />
-                <TextBox Name="firstName"/>
+                <TextBox Name="firstName" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
                 <Label Content="Last Name:" />
-                <TextBox Name="lastName" />
+                <TextBox Name="lastName" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
                 <Label Content="Applied Date:" />
-                <DatePicker Name="appliedDate" />
+                <DatePicker Name="appliedDate" SelectedDate="{Binding AppliedDate, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
                 <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
                 <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
             </UniformGrid>
         </UniformGrid>
     </Grid>
-    
-    <Window.Resources>
-        <Style TargetType="TextBox">
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="Height" Value="20"/>
-        </Style>
-        <Style TargetType="DatePicker">
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-        </Style>
-    </Window.Resources>
 </Window>

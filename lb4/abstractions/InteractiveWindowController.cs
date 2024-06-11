@@ -61,6 +61,11 @@ public class InteractiveWindowController<T, TDTO>
         }
     }
 
+    public void TriggerInvalidWindow()
+    {
+        WindowHelper.TriggerInvalidWindow();
+    }
+
     private ObservableCollection<T>? GetObservableList()
     {
         var stateInstance = StateSingleton.Instance;
@@ -76,4 +81,5 @@ public class InteractiveWindowController<T, TDTO>
         
         JSON.StringifyToFile(_path, dtoList);
     }
+    
 }

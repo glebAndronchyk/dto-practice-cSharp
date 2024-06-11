@@ -1,7 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 using System.Windows;
+using System.Windows.Controls;
 using lb4.abstractions;
+using lb4.ViewModels;
 
 namespace lb4;
 
@@ -15,7 +18,11 @@ public partial class Student_AddForm : Window, IInteractiveWindow<Student, Stude
         _wc = new ("Students", "students.json", this);
     }
 
-    public void OnSaveAndExit(object sender, RoutedEventArgs args) => _wc.OnSaveAndExit(OnSave, sender, args);
+    public void OnSaveAndExit(object sender, RoutedEventArgs args)
+    {
+        var vm = (StudentViewModel)DataContext;
+        vm.SubmitForm(() => _wc.OnSaveAndExit(OnSave, sender, args), _wc.TriggerInvalidWindow);
+    }
 
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new (
         firstName.Text,
