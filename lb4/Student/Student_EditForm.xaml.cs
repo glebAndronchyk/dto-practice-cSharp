@@ -27,11 +27,12 @@ public partial class Student_EditForm : Window, IEditWindow, IInteractiveWindow<
     public void SetCurrentData(string updateId)
     {
         _updateId = updateId;
+
         var currentObj = StateSingleton.Instance.Students.FirstOrDefault(s => s.Id == updateId);
         
         firstName.Text = currentObj.Name;
         lastName.Text = currentObj.Surname;
-        appliedDate.DisplayDate = currentObj.AppliedDate;
+        appliedDate.SelectedDate = currentObj.AppliedDate;
     }
     
     public void OnSaveAndExit(object sender, RoutedEventArgs args) => _wc.OnSaveAndExit(() => OnSave(sender, args), (StudentViewModel)DataContext);
@@ -39,7 +40,7 @@ public partial class Student_EditForm : Window, IEditWindow, IInteractiveWindow<
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnUpdate(_updateId, new ()
     {
         fullName = firstName.Text + " " + lastName.Text,
-        appliedDate = appliedDate.DisplayDate,
+        appliedDate = appliedDate.SelectedDate.ToString(),
         id = Guid.Parse(_updateId)
     });
 

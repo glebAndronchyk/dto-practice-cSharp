@@ -13,7 +13,7 @@
     </Window.DataContext>
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Student</Label>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Edit Student</Label>
             <StackPanel>
                 <StackPanel Style="{StaticResource fieldPanel}">
                     <Label Content="First Name:" />

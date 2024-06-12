@@ -24,7 +24,11 @@ public class StudentMapping : Profile
             .ForMember(
                 dest => dest.Surname,
                 opt => opt.MapFrom(source => GetNamePart(source.fullName, 1))
-            );
+            )
+            .ForMember(
+                dest => dest.AppliedDate,
+                opt => opt.MapFrom(source => DateTime.Parse(source.appliedDate)))
+            ;
     }
 
     private static string GetNamePart(string fullname, int index)

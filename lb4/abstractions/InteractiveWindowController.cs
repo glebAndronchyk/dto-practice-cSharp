@@ -11,7 +11,6 @@ public class InteractiveWindowController<T, TDTO> : WindowControllerBase<T, TDTO
     where T : ItemWithId
     where TDTO : DTOWithId
 {
-    private bool _confirmClose = true;
     private Window _windowCtx;
     
     public InteractiveWindowController(string stateKey, string path, Window ctx)
@@ -23,6 +22,7 @@ public class InteractiveWindowController<T, TDTO> : WindowControllerBase<T, TDTO
 
     public void OnUpdate(string updateId, TDTO dto)
     {
+        _confirmClose = false;
         var observableList = GetObservableList();
         var replaceIndex = observableList.ToList().FindIndex(e => e.Id == dto.id.ToString());
         observableList[replaceIndex] = StateSingleton.Instance.DtoMapper.Map<TDTO, T>(dto);
