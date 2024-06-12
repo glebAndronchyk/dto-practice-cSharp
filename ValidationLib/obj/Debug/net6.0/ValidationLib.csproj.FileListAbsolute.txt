@@ -1,0 +1,12 @@
+D:\univ\y2\2s\lb4\ValidationLib\bin\Debug\net6.0\ValidationLib.deps.json
+D:\univ\y2\2s\lb4\ValidationLib\bin\Debug\net6.0\ValidationLib.dll
+D:\univ\y2\2s\lb4\ValidationLib\bin\Debug\net6.0\ValidationLib.pdb
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.dll
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\refint\ValidationLib.dll
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ValidationLib.pdb
+D:\univ\y2\2s\lb4\ValidationLib\obj\Debug\net6.0\ref\ValidationLib.dll

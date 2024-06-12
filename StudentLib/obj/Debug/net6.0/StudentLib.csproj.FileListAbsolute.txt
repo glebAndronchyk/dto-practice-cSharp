@@ -13,3 +13,5 @@ D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.dll
 D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\refint\StudentLib.dll
 D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.pdb
 D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\ref\StudentLib.dll
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\ValidationLib.dll
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\ValidationLib.pdb

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScientificAchievementLib", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONLib", "JSONLib\JSONLib.csproj", "{772B7725-CABE-43F5-9DAD-93217E882B17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationLib", "ValidationLib\ValidationLib.csproj", "{1C5CA886-B6B9-4E90-963B-4CC534381ED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{772B7725-CABE-43F5-9DAD-93217E882B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{772B7725-CABE-43F5-9DAD-93217E882B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{772B7725-CABE-43F5-9DAD-93217E882B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5CA886-B6B9-4E90-963B-4CC534381ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5CA886-B6B9-4E90-963B-4CC534381ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5CA886-B6B9-4E90-963B-4CC534381ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5CA886-B6B9-4E90-963B-4CC534381ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

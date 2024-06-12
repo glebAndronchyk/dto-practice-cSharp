@@ -26,13 +26,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ModelBaseLib": "1.0.0"
+          "ModelBaseLib": "1.0.0",
+          "ValidationLib": "1.0.0"
         },
         "compile": {
           "bin/placeholder/StudentLib.dll": {}
         },
         "runtime": {
           "bin/placeholder/StudentLib.dll": {}
+        }
+      },
+      "ValidationLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ValidationLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ValidationLib.dll": {}
         }
       }
     }
@@ -52,6 +63,11 @@
       "type": "project",
       "path": "../StudentLib/StudentLib.csproj",
       "msbuildProject": "../StudentLib/StudentLib.csproj"
+    },
+    "ValidationLib/1.0.0": {
+      "type": "project",
+      "path": "../ValidationLib/ValidationLib.csproj",
+      "msbuildProject": "../ValidationLib/ValidationLib.csproj"
     }
   },
   "projectFileDependencyGroups": {

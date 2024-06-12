@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ModelBaseLib\ModelBaseLib.csproj" />
+      <ProjectReference Include="..\ValidationLib\ValidationLib.csproj" />
     </ItemGroup>
 
 </Project>

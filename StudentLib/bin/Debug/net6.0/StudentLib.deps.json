@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "StudentLib/1.0.0": {
         "dependencies": {
-          "ModelBaseLib": "1.0.0"
+          "ModelBaseLib": "1.0.0",
+          "ValidationLib": "1.0.0"
         },
         "runtime": {
           "StudentLib.dll": {}
@@ -17,6 +18,11 @@
       "ModelBaseLib/1.0.0": {
         "runtime": {
           "ModelBaseLib.dll": {}
+        }
+      },
+      "ValidationLib/1.0.0": {
+        "runtime": {
+          "ValidationLib.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "ModelBaseLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ValidationLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

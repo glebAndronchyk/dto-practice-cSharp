@@ -29,10 +29,10 @@ public class StateSingleton
 
     public void LoadData()
     {
-        var students = DtoMapper.Map<List<StudentDTO>, List<Student>>(JSON.ParseFromFile<List<StudentDTO>>("students.json"));
-        var researches = DtoMapper.Map<List<ResearchDTO>, List<Research>>(JSON.ParseFromFile<List<ResearchDTO>>("researches.json"));
-        var customers = DtoMapper.Map<List<CustomerDTO>, List<Customer>>(JSON.ParseFromFile<List<CustomerDTO>>("customers.json"));
-        var publications = DtoMapper.Map<List<PublicationDTO>, List<Publication>>(JSON.ParseFromFile<List<PublicationDTO>>("publications.json"));
+        var students = DtoMapper.Map<List<StudentDTO>, List<Student>>(JSON.ParseFromFile<StudentDTO>("students.json"));
+        var researches = DtoMapper.Map<List<ResearchDTO>, List<Research>>(JSON.ParseFromFile<ResearchDTO>("researches.json"));
+        var customers = DtoMapper.Map<List<CustomerDTO>, List<Customer>>(JSON.ParseFromFile<CustomerDTO>("customers.json"));
+        var publications = DtoMapper.Map<List<PublicationDTO>, List<Publication>>(JSON.ParseFromFile<PublicationDTO>("publications.json"));
 
         Publications = new ObservableCollection<Publication>(publications);
         Customers = new ObservableCollection<Customer>(customers);

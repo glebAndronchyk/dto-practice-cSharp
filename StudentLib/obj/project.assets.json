@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/ModelBaseLib.dll": {}
         }
+      },
+      "ValidationLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ValidationLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ValidationLib.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../ModelBaseLib/ModelBaseLib.csproj",
       "msbuildProject": "../ModelBaseLib/ModelBaseLib.csproj"
+    },
+    "ValidationLib/1.0.0": {
+      "type": "project",
+      "path": "../ValidationLib/ValidationLib.csproj",
+      "msbuildProject": "../ValidationLib/ValidationLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ModelBaseLib >= 1.0.0"
+      "ModelBaseLib >= 1.0.0",
+      "ValidationLib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -61,6 +77,9 @@
           "projectReferences": {
             "D:\\univ\\y2\\2s\\lb4\\ModelBaseLib\\ModelBaseLib.csproj": {
               "projectPath": "D:\\univ\\y2\\2s\\lb4\\ModelBaseLib\\ModelBaseLib.csproj"
+            },
+            "D:\\univ\\y2\\2s\\lb4\\ValidationLib\\ValidationLib.csproj": {
+              "projectPath": "D:\\univ\\y2\\2s\\lb4\\ValidationLib\\ValidationLib.csproj"
             }
           }
         }

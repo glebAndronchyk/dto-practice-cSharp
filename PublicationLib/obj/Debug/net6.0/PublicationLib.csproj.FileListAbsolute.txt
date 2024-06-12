@@ -17,3 +17,5 @@ D:\univ\y2\2s\lb4\PublicationLib\obj\Debug\net6.0\PublicationLib.dll
 D:\univ\y2\2s\lb4\PublicationLib\obj\Debug\net6.0\refint\PublicationLib.dll
 D:\univ\y2\2s\lb4\PublicationLib\obj\Debug\net6.0\PublicationLib.pdb
 D:\univ\y2\2s\lb4\PublicationLib\obj\Debug\net6.0\ref\PublicationLib.dll
+D:\univ\y2\2s\lb4\PublicationLib\bin\Debug\net6.0\ValidationLib.dll
+D:\univ\y2\2s\lb4\PublicationLib\bin\Debug\net6.0\ValidationLib.pdb
