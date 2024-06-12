@@ -30,9 +30,9 @@
             <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Publication</Label>
             <UniformGrid Columns="2">
                 <Label Content="Student:" />
-                <ComboBox DisplayMemberPath="FullName" Name="students_combobox" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                <ComboBox Template="{StaticResource fieldTemplate}" DisplayMemberPath="FullName" Name="students_combobox" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
                 <Label Content="Achievement:" />
-                <ComboBox DisplayMemberPath="FullName" Name="achievements_combobox" ItemsSource="{Binding Source={StaticResource AchievementsEnum}}" SelectedItem="{Binding Achievement, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                <ComboBox Template="{StaticResource fieldTemplate}" Name="achievements_combobox" ItemsSource="{Binding Source={StaticResource AchievementsEnum}}" SelectedItem="{Binding Achievement, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
                 <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
                 <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
             </UniformGrid>

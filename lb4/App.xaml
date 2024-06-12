@@ -7,24 +7,23 @@
         <ResourceDictionary>
             <ControlTemplate x:Key="validationTemplate">
                 <StackPanel>
-                    <Border BorderBrush="Red" BorderThickness="1" Margin="5">
-                        <AdornedElementPlaceholder/>
-                    </Border>
-                    <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red"/>
+                    <TextBlock FontSize="6" Text="{Binding [0].ErrorContent}" Foreground="Red"/>
+                    <AdornedElementPlaceholder  />
                 </StackPanel>
             </ControlTemplate>
 
-            <Style TargetType="TextBox">
-                <Setter Property="VerticalAlignment" Value="Top"/>
-                <Setter Property="HorizontalAlignment" Value="Left"/>
-                <Setter Property="Width" Value="150"/>
-                <Setter Property="Height" Value="20"/>
+            <Style x:Key="fieldPanel" TargetType="StackPanel">
+                <Setter Property="Margin" Value="0, 0, 0, 10"/>
+                <Setter Property="Height" Value="60"/>
             </Style>
-
-            <Style TargetType="DatePicker">
-                <!-- <Setter Property="Width" Value="150"/> -->
+            
+            <Style TargetType="Control">
                 <Setter Property="VerticalAlignment" Value="Top"/>
                 <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="Margin" Value="0,0,0, 20"/>
+                <Setter Property="Width" Value="220"/>
+                <Setter Property="MaxWidth" Value="220"/>
+                <Setter Property="MaxHeight" Value="20"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

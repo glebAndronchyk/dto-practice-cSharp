@@ -61,7 +61,6 @@ namespace lb4.ViewModels
                 
                 if (isLastNameNotValid || isFirstNameNotValid)
                     return NameValidationString;
-                
                 return null;
             }
         }

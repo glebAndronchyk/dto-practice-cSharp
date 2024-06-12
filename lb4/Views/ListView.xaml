@@ -8,14 +8,14 @@
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="500" />
-                <RowDefinition Height="70" />
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="3*" />
             </Grid.RowDefinitions>
     
             <ListBox x:Name="listbox" ItemsSource="{Binding ItemsSource, RelativeSource={RelativeSource AncestorType=UserControl}}">
                 <ListBox.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="{Binding EditText, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                        <MenuItem Header="Edit"
                                   Click="OnEditClick" />
                         <MenuItem Header="Remove"
                                   Click="OnRemoveClick" />

@@ -13,6 +13,8 @@ public partial class Publication_MainWindow : Window, IListWindowParent
     {
         InitializeComponent();
         WindowController<Publication, PublicationDTO> wc = new(
+            "publications.json",
+            "Publications",
                 () => new Publication_AddForm(),
                 () => new Publication_EditForm()
             );

@@ -53,15 +53,6 @@ namespace lb4.Views
             set { SetValue(AddNewTextProperty, value); }
         }
 
-        public static readonly DependencyProperty EditTextProperty =
-            DependencyProperty.Register("EditText", typeof(string), typeof(ListView));
-
-        public string EditText
-        {
-            get { return (string)GetValue(EditTextProperty); }
-            set { SetValue(EditTextProperty, value); }
-        }
-
         public ListBox ListBox => listbox;
 
         public ListView()

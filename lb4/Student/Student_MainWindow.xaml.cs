@@ -13,6 +13,8 @@ public partial class Student_MainWindow : Window, IListWindowParent
     {
         InitializeComponent();
         WindowController<Student, StudentDTO> wc = new(
+            "students.json",
+            "Students",
                 () => new Student_AddForm(),
                 () => new Student_EditForm()
             );

@@ -12,6 +12,5 @@
                          OnAddNew="OnAddNew"
                          OnRemove="OnRemove"
                          OnEdit="OnEdit"
-                         EditText="Edit Student"
     />
 </Window>

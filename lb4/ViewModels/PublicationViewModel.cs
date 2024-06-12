@@ -40,11 +40,25 @@ public class PublicationViewModel : ViewModelBase, IDataErrorInfo
         {
             get
             {
-                if ((columnName == "Student" && string.IsNullOrEmpty(columnName)) ||
-                    (columnName == "Achievement" && string.IsNullOrEmpty(columnName)))
-                    return FieldRequiredString;
+                switch (columnName)
+                {
+                    case "Student":
+                        if (Student == null)
+                        {
+                            return FieldRequiredString;
+                        }
 
-                return null;
+                        break;
+                    case "Achievement":
+                        if (Achievement == null)
+                        {
+                            return FieldRequiredString;
+                        }
+
+                        break;
+                }
+
+                return default;
             }
         }
         

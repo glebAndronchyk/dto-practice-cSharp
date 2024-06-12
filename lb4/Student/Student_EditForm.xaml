@@ -4,26 +4,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:viewmodel="clr-namespace:lb4.ViewModels"
-        xmlns:local="clr-namespace:lb4"
-        Closing="ClosingSequence"
         mc:Ignorable="d"
-        Title="Student_EditForm" Height="450" Width="800">
+        MaxHeight="400" MaxWidth="400"
+        Closing="ClosingSequence"
+        Title="Student_AddForm" Height="400" Width="400">
     <Window.DataContext>
         <viewmodel:StudentViewModel />
     </Window.DataContext>
     <Grid>
-        <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Edit Student</Label>
-            <UniformGrid Columns="2">
-                <Label Content="First Name:" />
-                <TextBox Name="firstName" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
-                <Label Content="Last Name:" />
-                <TextBox Name="lastName" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
-                <Label Content="Applied Date:" />
-                <DatePicker Name="appliedDate" SelectedDate="{Binding AppliedDate, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
-                <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
-                <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
-            </UniformGrid>
-        </UniformGrid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Student</Label>
+            <StackPanel>
+                <StackPanel Style="{StaticResource fieldPanel}">
+                    <Label Content="First Name:" />
+                    <TextBox  Name="firstName" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                </StackPanel>
+                <StackPanel Style="{StaticResource fieldPanel}">
+                    <Label Content="Last Name:" />
+                    <TextBox Name="lastName" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                </StackPanel>
+                <StackPanel Style="{StaticResource fieldPanel}">
+                    <Label Content="Applied Date:" />
+                    <DatePicker Name="appliedDate" SelectedDate="{Binding AppliedDate, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                </StackPanel>
+                <UniformGrid Columns="2">
+                    <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
+                    <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
+                </UniformGrid>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

@@ -7,14 +7,12 @@ using System.Windows;
 
 namespace lb4.abstractions;
 
-public class InteractiveWindowController<T, TDTO> 
+public class InteractiveWindowController<T, TDTO> : WindowControllerBase<T, TDTO>
     where T : ItemWithId
     where TDTO : DTOWithId
 {
     private bool _confirmClose = true;
-    private string _path;
     private Window _windowCtx;
-    private string _stateKey;
     
     public InteractiveWindowController(string stateKey, string path, Window ctx)
     {
@@ -52,34 +50,6 @@ public class InteractiveWindowController<T, TDTO>
     public void OnClose()
     {
         _windowCtx.Close();
-    }
-
-    public void ClosingSequence(object sender, CancelEventArgs e)
-    {
-        if (_confirmClose)
-        {
-            WindowHelper.OnWindowClose(e, () => SerializeObservableList());
-        }
-        else
-        {
-            SerializeObservableList();
-        }
-    }
-
-    private ObservableCollection<T>? GetObservableList()
-    {
-        var stateInstance = StateSingleton.Instance;
-        var observableField = typeof(StateSingleton).GetField(_stateKey);
-
-        return observableField.GetValue(stateInstance) as ObservableCollection<T>;
-    }
-
-    private void SerializeObservableList()
-    {
-        var observableList = GetObservableList();
-        var dtoList = StateSingleton.Instance.DtoMapper.Map<List<T>, List<TDTO>>(observableList.ToList());
-        
-        JSON.StringifyToFile(_path, dtoList);
     }
     
 }

@@ -3,13 +3,15 @@ using System.Windows;
 
 namespace lb4.abstractions;
 
-public class WindowController<T, TDTO> : IListWindowChild
+public class WindowController<T, TDTO> : WindowControllerBase<T, TDTO>, IListWindowChild
 {
-    private Func<Window> _addWindowFabric;
-    private Func<IEditWindow> _editWindowFabric;
+    private readonly Func<Window> _addWindowFabric;
+    private readonly Func<IEditWindow> _editWindowFabric;
     
-    public WindowController(Func<Window> addWindowFabric, Func<IEditWindow> editWindowFabric)
+    public WindowController(string filePath, string stateKey, Func<Window> addWindowFabric, Func<IEditWindow> editWindowFabric)
     {
+        _path = filePath;
+        _stateKey = stateKey;
         _addWindowFabric = addWindowFabric;
         _editWindowFabric = editWindowFabric;
     }
@@ -33,6 +35,7 @@ public class WindowController<T, TDTO> : IListWindowChild
         if (result == MessageBoxResult.Yes)
         {
             callback();
+            SerializeObservableList();
         }
     }
 

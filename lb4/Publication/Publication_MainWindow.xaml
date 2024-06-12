@@ -8,10 +8,9 @@
         mc:Ignorable="d"
         Title="Student_MainWindow" Height="500" Width="800">
     <components:ListView x:Name="publications_list"
-                         AddNewText="Add New Student"
+                         AddNewText="Add New Publication"
                          OnAddNew="OnAddNew"
                          OnRemove="OnRemove"
                          OnEdit="OnEdit"
-                         EditText="Edit Student"
     />
 </Window>
