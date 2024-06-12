@@ -45,7 +45,7 @@ public class InteractiveWindowController<T, TDTO>
             _confirmClose = false;
             OnClose();
         }, 
-            TriggerInvalidWindow
+            WindowHelper.TriggerInvalidWindow
         );
     }
 
@@ -64,11 +64,6 @@ public class InteractiveWindowController<T, TDTO>
         {
             SerializeObservableList();
         }
-    }
-
-    public void TriggerInvalidWindow()
-    {
-        WindowHelper.TriggerInvalidWindow();
     }
 
     private ObservableCollection<T>? GetObservableList()
