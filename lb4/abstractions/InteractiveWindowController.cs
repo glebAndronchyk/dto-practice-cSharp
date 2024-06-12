@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -14,8 +15,6 @@ public class InteractiveWindowController<T, TDTO>
     private string _path;
     private Window _windowCtx;
     private string _stateKey;
-
-    public delegate void OnSaveHandlerType(object sender, RoutedEventArgs e);
     
     public InteractiveWindowController(string stateKey, string path, Window ctx)
     {
@@ -37,11 +36,17 @@ public class InteractiveWindowController<T, TDTO>
         observableList.Add(obj);
     }
 
-    public void OnSaveAndExit(OnSaveHandlerType OnSaveHandler, object sender, RoutedEventArgs args)
+    public void OnSaveAndExit(Action OnSaveHandler, ViewModelBase vm)
     {
-        OnSaveHandler(sender, args);
-        _confirmClose = false;
-        OnClose();
+        vm.SubmitForm(
+            () =>
+        {
+            OnSaveHandler();
+            _confirmClose = false;
+            OnClose();
+        }, 
+            TriggerInvalidWindow
+        );
     }
 
     public void OnClose()

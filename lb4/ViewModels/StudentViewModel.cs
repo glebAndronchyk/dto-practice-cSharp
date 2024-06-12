@@ -71,18 +71,6 @@ namespace lb4.ViewModels
             var isValid = NameFields.Any(field => string.IsNullOrEmpty(this[field])) && string.IsNullOrEmpty(this["AppliedDate"]);
             return isValid;
         }
-        
-        public override void SubmitForm(Action successCallback, Action errorCallback)
-        {
-            if (IsFormValid())
-            {
-                successCallback();
-            }
-            else
-            {
-                errorCallback();
-            }
-        }
 
         private bool ValidateName(string? name) =>
             string.IsNullOrEmpty(name) || name.Length < MinNameLength || name.Length > MaxNameLength;

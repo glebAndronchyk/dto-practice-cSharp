@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using lb4.abstractions;
+using lb4.ViewModels;
 
 namespace lb4;
 
@@ -33,7 +34,7 @@ public partial class Student_EditForm : Window, IEditWindow, IInteractiveWindow<
         appliedDate.DisplayDate = currentObj.AppliedDate;
     }
     
-    public void OnSaveAndExit(object sender, RoutedEventArgs args) => _wc.OnSaveAndExit(OnSave, sender, args);
+    public void OnSaveAndExit(object sender, RoutedEventArgs args) => _wc.OnSaveAndExit(() => OnSave(sender, args), (StudentViewModel)DataContext);
 
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnUpdate(_updateId, new ()
     {

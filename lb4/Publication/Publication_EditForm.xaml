@@ -4,42 +4,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:lb4"
+        xmlns:viewmodel="clr-namespace:lb4.ViewModels"
         xmlns:sys="clr-namespace:System;assembly=System.Runtime"
-        Closing="ClosingSequence"
         mc:Ignorable="d"
-        Title="Student_EditForm" Height="450" Width="800">
+        Closing="ClosingSequence"
+        MaxHeight="400" MaxWidth="400"
+        Title="Student_AddForm" Height="400" Width="400">
     <Window.Resources>
         <ObjectDataProvider MethodName="GetValues" ObjectType="{x:Type sys:Enum}" x:Key="AchievementsEnum">
             <ObjectDataProvider.MethodParameters>
                 <x:Type TypeName="local:EScientificAchievement" />
             </ObjectDataProvider.MethodParameters>
-        </ObjectDataProvider>     
-        <Style TargetType="TextBox">
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="Height" Value="20"/>
-        </Style>
-        <Style TargetType="DatePicker">
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-        </Style>
+        </ObjectDataProvider>    
     </Window.Resources>
     
+    <Window.DataContext>
+        <viewmodel:PublicationViewModel />
+    </Window.DataContext>
+    
     <Grid>
-        <Grid>
-            <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Label HorizontalAlignment="Center" VerticalAlignment="Center">Edit Existing Publication</Label>
-                <UniformGrid Columns="2">
-                    <Label Content="Student:" />
-                    <ComboBox DisplayMemberPath="FullName" Name="students_combobox"/>
-                    <Label Content="Achievement:" />
-                    <ComboBox ItemsSource="{Binding Source={StaticResource AchievementsEnum}}" Name="achievements_combobox" />
-                    <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
-                    <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
-                </UniformGrid>
+        <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Publication</Label>
+            <UniformGrid Columns="2">
+                <Label Content="Student:" />
+                <ComboBox DisplayMemberPath="FullName" Name="students_combobox" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                <Label Content="Achievement:" />
+                <ComboBox DisplayMemberPath="FullName" Name="achievements_combobox" ItemsSource="{Binding Source={StaticResource AchievementsEnum}}" SelectedItem="{Binding Achievement, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
+                <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
             </UniformGrid>
-        </Grid>
+        </UniformGrid>
     </Grid>
 </Window>

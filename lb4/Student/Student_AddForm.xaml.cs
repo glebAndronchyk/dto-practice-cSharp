@@ -20,8 +20,7 @@ public partial class Student_AddForm : Window, IInteractiveWindow<Student, Stude
 
     public void OnSaveAndExit(object sender, RoutedEventArgs args)
     {
-        var vm = (StudentViewModel)DataContext;
-        vm.SubmitForm(() => _wc.OnSaveAndExit(OnSave, sender, args), _wc.TriggerInvalidWindow);
+        _wc.OnSaveAndExit(() => OnSave(sender, args), (StudentViewModel)DataContext);
     }
 
     public void OnSave(object sender, RoutedEventArgs args) => _wc.OnSave(new (
