@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows;
 using lb4.abstractions;
+using lb4.Enums;
 using lb4.ViewModels;
 
 namespace lb4;
@@ -15,6 +17,7 @@ public partial class Publication_AddForm : Window, IInteractiveWindow<Publicatio
     {
         InitializeComponent();
         students_combobox.ItemsSource = StateSingleton.Instance.Students;
+        achievements_combobox.ItemsSource = new List<KeyValuePair<EScientificAchievement, string>>(ScientificAchievementMap.DescriptionMap);
         _wc = new ("Publications", "publications.json", this);
     }
 
@@ -27,7 +30,7 @@ public partial class Publication_AddForm : Window, IInteractiveWindow<Publicatio
     {
         _wc.OnSave(new (
             (students_combobox.SelectedItem as Student)!, 
-            Enum.Parse<EScientificAchievement>(achievements_combobox.SelectedItem.ToString()!),
+            ((KeyValuePair<EScientificAchievement, string>)achievements_combobox.SelectedItem).Key,
             Guid.NewGuid().ToString()
         ));
     }

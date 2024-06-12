@@ -4,6 +4,6 @@ namespace lb4;
 
 public class PublicationDTO : DTOWithId
 {
-    public Student student { get; set; }
-    public EScientificAchievement achievement { get; set; }
+    public StudentDTO student { get; set; }
+    public int achievement { get; set; }
 }

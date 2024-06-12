@@ -1,4 +1,5 @@
 ﻿using lb4.abstractions;
+using lb4.Enums;
 
 namespace lb4;
 
@@ -16,6 +17,6 @@ public class Publication : ItemWithId
 
     public override string ToString()
     {
-        return $"{Student.FullName} - Wrote publication with achievement: {Achievement}";
+        return $"{Student.FullName} - Wrote publication with achievement: {ScientificAchievementMap.DescriptionMap[Achievement]}";
     }
 }

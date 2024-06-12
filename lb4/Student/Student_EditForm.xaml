@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         MaxHeight="400" MaxWidth="400"
         Closing="ClosingSequence"
-        Title="Student_AddForm" Height="400" Width="400">
+        Title="Edit Student" Height="400" Width="400">
     <Window.DataContext>
         <viewmodel:StudentViewModel />
     </Window.DataContext>

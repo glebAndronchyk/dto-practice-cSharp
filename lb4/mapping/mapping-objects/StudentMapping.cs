@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AutoMapper;
 
 namespace lb4;
@@ -31,7 +32,12 @@ public class StudentMapping : Profile
             ;
     }
 
-    private static string GetNamePart(string fullname, int index)
+    public static string[] GetNameParts(string fullname)
+    {
+        return fullname.Split(" ", 2);
+    }
+    
+    public static string GetNamePart(string fullname, int index)
     {
         return fullname.Split(" ", 2)[index];
     }

@@ -22,8 +22,8 @@ public class PublicationViewModel : ViewModelBase, IDataErrorInfo
             }
         }
 
-        private EScientificAchievement? achievement;
-        public EScientificAchievement? Achievement
+        private KeyValuePair<EScientificAchievement, string>? achievement;
+        public KeyValuePair<EScientificAchievement, string>? Achievement
         {
             get { return achievement; }
             set
@@ -32,7 +32,6 @@ public class PublicationViewModel : ViewModelBase, IDataErrorInfo
                 OnPropertyChanged("Achievement");
             }
         }
-    
 
         public string Error => null;
         

@@ -9,33 +9,33 @@
         mc:Ignorable="d"
         Closing="ClosingSequence"
         MaxHeight="400" MaxWidth="400"
-        Title="Student_AddForm" Height="400" Width="400">
-    <!-- <Window.DataContext> -->
-    <!--     <local:StateSingleton /> -->
-    <!-- </Window.DataContext> -->
-    <Window.Resources>
-        <ObjectDataProvider MethodName="GetValues" ObjectType="{x:Type sys:Enum}" x:Key="AchievementsEnum">
-            <ObjectDataProvider.MethodParameters>
-                <x:Type TypeName="local:EScientificAchievement" />
-            </ObjectDataProvider.MethodParameters>
-        </ObjectDataProvider>    
-    </Window.Resources>
-    
+        Title="Add Publication" Height="400" Width="400">
     <Window.DataContext>
         <viewmodel:PublicationViewModel />
     </Window.DataContext>
     
     <Grid>
         <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add New Publication</Label>
-            <UniformGrid Columns="2">
-                <Label Content="Student:" />
-                <ComboBox Template="{StaticResource fieldTemplate}" DisplayMemberPath="FullName" Name="students_combobox" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
-                <Label Content="Achievement:" />
-                <ComboBox Template="{StaticResource fieldTemplate}" Name="achievements_combobox" ItemsSource="{Binding Source={StaticResource AchievementsEnum}}" SelectedItem="{Binding Achievement, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
-                <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
-                <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
-            </UniformGrid>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Add Publication</Label>
+            <StackPanel>
+                <StackPanel Style="{StaticResource fieldPanel}">
+                    <Label Content="Student:" />
+                    <ComboBox DisplayMemberPath="FullName" Name="students_combobox" SelectedItem="{Binding Student, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Validation.ErrorTemplate="{StaticResource validationTemplate}" />
+                </StackPanel>
+                <StackPanel Style="{StaticResource fieldPanel}">
+                    <Label Content="Achievement:" />
+                    <ComboBox DisplayMemberPath="Value" 
+                              SelectedValuePath="Key"
+                              Name="achievements_combobox"
+                              SelectedItem="{Binding Achievement, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                              Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                    />
+                </StackPanel>
+               <UniformGrid >
+                   <Button Click="OnSaveAndExit" Margin="0 0 20 0">Exit and Save</Button>
+                   <Button Click="OnClose" Margin="20 0 0 0">Exit and No save</Button>
+               </UniformGrid>
+            </StackPanel>
         </UniformGrid>
     </Grid>
 </Window>

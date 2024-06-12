@@ -41,7 +41,7 @@ public partial class Student_EditForm : Window, IEditWindow, IInteractiveWindow<
     {
         fullName = firstName.Text + " " + lastName.Text,
         appliedDate = appliedDate.SelectedDate.ToString(),
-        id = Guid.Parse(_updateId)
+        id = _updateId
     });
 
     public void ClosingSequence(object sender, CancelEventArgs e) => _wc.ClosingSequence(sender, e);
