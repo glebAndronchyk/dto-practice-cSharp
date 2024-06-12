@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PublicationLib/1.0.0": {
+        "dependencies": {
+          "ModelBaseLib": "1.0.0",
+          "ScientificAchievementLib": "1.0.0",
+          "StudentLib": "1.0.0"
+        },
+        "runtime": {
+          "PublicationLib.dll": {}
+        }
+      },
+      "ModelBaseLib/1.0.0": {
+        "runtime": {
+          "ModelBaseLib.dll": {}
+        }
+      },
+      "ScientificAchievementLib/1.0.0": {
+        "runtime": {
+          "ScientificAchievementLib.dll": {}
+        }
+      },
+      "StudentLib/1.0.0": {
+        "dependencies": {
+          "ModelBaseLib": "1.0.0"
+        },
+        "runtime": {
+          "StudentLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PublicationLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModelBaseLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ScientificAchievementLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

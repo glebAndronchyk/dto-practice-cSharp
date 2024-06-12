@@ -1,0 +1,12 @@
+D:\univ\y2\2s\lb4\JSONLib\bin\Debug\net6.0\JSONLib.deps.json
+D:\univ\y2\2s\lb4\JSONLib\bin\Debug\net6.0\JSONLib.dll
+D:\univ\y2\2s\lb4\JSONLib\bin\Debug\net6.0\JSONLib.pdb
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.dll
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\refint\JSONLib.dll
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\JSONLib.pdb
+D:\univ\y2\2s\lb4\JSONLib\obj\Debug\net6.0\ref\JSONLib.dll

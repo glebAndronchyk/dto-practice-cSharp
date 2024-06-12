@@ -1,0 +1,15 @@
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\StudentLib.deps.json
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\StudentLib.dll
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\StudentLib.pdb
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\ModelBaseLib.dll
+D:\univ\y2\2s\lb4\StudentLib\bin\Debug\net6.0\ModelBaseLib.pdb
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.csproj.CopyComplete
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.dll
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\refint\StudentLib.dll
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\StudentLib.pdb
+D:\univ\y2\2s\lb4\StudentLib\obj\Debug\net6.0\ref\StudentLib.dll

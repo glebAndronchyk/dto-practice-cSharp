@@ -12,21 +12,37 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Page Update="Publication\Publication_AddForm.xaml">
+      <Page Update="Windows\Student\Student_MainWindow.xaml">
         <Generator>MSBuild:Compile</Generator>
-        <XamlRuntime>Wpf</XamlRuntime>
-        <SubType>Designer</SubType>
       </Page>
-      <Page Update="Publication\Publication_EditForm.xaml">
+      <Page Update="Windows\Student\Student_EditForm.xaml">
         <Generator>MSBuild:Compile</Generator>
-        <XamlRuntime>Wpf</XamlRuntime>
-        <SubType>Designer</SubType>
       </Page>
-      <Page Update="Publication\Publication_MainWindow.xaml">
+      <Page Update="Windows\Student\Student_AddForm.xaml">
         <Generator>MSBuild:Compile</Generator>
-        <XamlRuntime>Wpf</XamlRuntime>
-        <SubType>Designer</SubType>
       </Page>
+      <Page Update="Windows\Publication\Publication_AddForm.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Windows\Publication\Publication_EditForm.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Windows\Publication\Publication_MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="temp\" />
+      <Folder Include="Windows\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\JSONLib\JSONLib.csproj" />
+      <ProjectReference Include="..\ModelBaseLib\ModelBaseLib.csproj" />
+      <ProjectReference Include="..\PublicationLib\PublicationLib.csproj" />
+      <ProjectReference Include="..\ScientificAchievementLib\ScientificAchievementLib.csproj" />
+      <ProjectReference Include="..\StudentLib\StudentLib.csproj" />
     </ItemGroup>
 
 </Project>

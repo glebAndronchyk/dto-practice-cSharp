@@ -1,0 +1,12 @@
+D:\univ\y2\2s\lb4\ModelBaseLib\bin\Debug\net6.0\ModelBaseLib.deps.json
+D:\univ\y2\2s\lb4\ModelBaseLib\bin\Debug\net6.0\ModelBaseLib.dll
+D:\univ\y2\2s\lb4\ModelBaseLib\bin\Debug\net6.0\ModelBaseLib.pdb
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.csproj.AssemblyReference.cache
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.AssemblyInfoInputs.cache
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.AssemblyInfo.cs
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.csproj.CoreCompileInputs.cache
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.dll
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\refint\ModelBaseLib.dll
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ModelBaseLib.pdb
+D:\univ\y2\2s\lb4\ModelBaseLib\obj\Debug\net6.0\ref\ModelBaseLib.dll
