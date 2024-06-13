@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lb4"
         mc:Ignorable="d"
+        Closing="SerializeAll"
         Title="MainWindow" Height="450" Width="800">
     <UniformGrid Columns="1">
         <Button Click="OnOpenStudentsForm">Open students form</Button>

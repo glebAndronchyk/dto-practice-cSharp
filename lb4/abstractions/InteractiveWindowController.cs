@@ -23,15 +23,21 @@ public class InteractiveWindowController<T, TDTO> : WindowControllerBase<T, TDTO
     public void OnUpdate(string updateId, TDTO dto)
     {
         _confirmClose = false;
-        var observableList = GetObservableList();
-        var replaceIndex = observableList.ToList().FindIndex(e => e.Id == dto.id.ToString());
-        observableList[replaceIndex] = StateSingleton.Instance.DtoMapper.Map<TDTO, T>(dto);
+        _closingDelegate += () =>
+        {
+            var observableList = GetObservableList();
+            var replaceIndex = observableList.ToList().FindIndex(e => e.Id == dto.id.ToString());
+            observableList[replaceIndex] = StateSingleton.Instance.DtoMapper.Map<TDTO, T>(dto);
+        };
     }
 
     public void OnSave(T obj)
     {
-        var observableList = GetObservableList();
-        observableList.Add(obj);
+        _closingDelegate += () =>
+        {
+            var observableList = GetObservableList();
+            observableList.Add(obj);
+        };
     }
 
     public void OnSaveAndExit(Action OnSaveHandler, ViewModelBase vm)

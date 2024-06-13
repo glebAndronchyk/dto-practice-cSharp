@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -11,16 +12,17 @@ public class WindowControllerBase<T, TDTO>
     protected string _stateKey;
     protected string _path;
 
-    
+    protected Action _closingDelegate = () => { };
+
     public void ClosingSequence(object sender, CancelEventArgs e)
     {
         if (_confirmClose)
         {
-            WindowHelper.OnWindowClose(e, () => SerializeObservableList());
+            WindowHelper.OnWindowClose(e, () => _closingDelegate());
         }
         else
         {
-            SerializeObservableList();
+            _closingDelegate();
         }
     }
 
